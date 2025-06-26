@@ -1,9 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://bxrmm01wedkg8"]
+[gd_scene load_steps=19 format=3 uid="uid://bxrmm01wedkg8"]
 
 [ext_resource type="Script" uid="uid://bdcdtnabeav5e" path="res://Scenes/characters/chicken/chicken.gd" id="1_32uni"]
 [ext_resource type="Texture2D" uid="uid://dqpfce1exyixm" path="res://Assets/game/characters/chicken_sprites.png" id="1_d58w0"]
 [ext_resource type="Script" uid="uid://cv8didbd103xl" path="res://Scripts/state_machine/node_state_machine.gd" id="2_32g4a"]
 [ext_resource type="Script" uid="uid://clvfon83kj2o4" path="res://Scenes/characters/npc_states/idle_state.gd" id="3_4eg5w"]
+[ext_resource type="Texture2D" uid="uid://vw5dku0jvelg" path="res://Assets/game/characters/farmingTilesheetComplete.png" id="3_67pww"]
 [ext_resource type="Script" uid="uid://dulpqyhm7dvbp" path="res://Scenes/characters/npc_states/walk_state.gd" id="4_02ruc"]
 [ext_resource type="PackedScene" uid="uid://d3fgvkic1r4kn" path="res://Audio/sfx/chicken_cluck_multiple_sfx.tscn" id="6_0b115"]
 [ext_resource type="PackedScene" uid="uid://dcw0on3qcam62" path="res://Scenes/components/audio_play_time_component.tscn" id="6_lyucn"]
@@ -16,21 +17,29 @@ region = Rect2(0, 0, 16, 16)
 atlas = ExtResource("1_d58w0")
 region = Rect2(16, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gomam"]
-atlas = ExtResource("1_d58w0")
-region = Rect2(0, 16, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_kxv6n"]
+atlas = ExtResource("3_67pww")
+region = Rect2(0, 32, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_85r7t"]
-atlas = ExtResource("1_d58w0")
-region = Rect2(16, 16, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_2q2yr"]
+atlas = ExtResource("3_67pww")
+region = Rect2(16, 32, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4o0kj"]
-atlas = ExtResource("1_d58w0")
-region = Rect2(32, 16, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_atba4"]
+atlas = ExtResource("3_67pww")
+region = Rect2(64, 32, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_f5m1e"]
-atlas = ExtResource("1_d58w0")
-region = Rect2(48, 16, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_74fqg"]
+atlas = ExtResource("3_67pww")
+region = Rect2(80, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67pww"]
+atlas = ExtResource("3_67pww")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57d3o"]
+atlas = ExtResource("3_67pww")
+region = Rect2(16, 32, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qvber"]
 animations = [{
@@ -47,16 +56,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gomam")
+"texture": SubResource("AtlasTexture_kxv6n")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_85r7t")
+"texture": SubResource("AtlasTexture_2q2yr")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4o0kj")
+"texture": SubResource("AtlasTexture_atba4")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_f5m1e")
+"texture": SubResource("AtlasTexture_74fqg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_67pww")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57d3o")
 }],
 "loop": true,
 "name": &"Walk",

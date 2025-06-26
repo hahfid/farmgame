@@ -13,11 +13,11 @@ shader_parameter/orignal_1 = Color(0.462745, 0.427451, 0.666667, 1)
 shader_parameter/replace_0 = Color(0, 0.508417, 2.88785e-07, 1)
 shader_parameter/replace_1 = Color(0.603611, 1, 0.573065, 1)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tk3au"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ia5c"]
 atlas = ExtResource("2_6trad")
 region = Rect2(0, 0, 48, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_07x3k"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_iid2l"]
 atlas = ExtResource("2_6trad")
 region = Rect2(48, 0, 48, 48)
 
@@ -25,10 +25,10 @@ region = Rect2(48, 0, 48, 48)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_tk3au")
+"texture": SubResource("AtlasTexture_2ia5c")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_07x3k")
+"texture": SubResource("AtlasTexture_iid2l")
 }],
 "loop": true,
 "name": &"idle",

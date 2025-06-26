@@ -41,12 +41,13 @@ func growth_states(starting_day: int, current_day: int) -> void:
 func harvest_state(starting_day: int, current_day: int) -> void:
 	if current_growth_state == DataTypes.GrowthStates.Haversting:
 		return
-		
-	var days_passed = (current_day - starting_day) % days_until_harvesting
-	
-	if days_passed == days_until_harvesting - 1:
-		current_growth_state == DataTypes.GrowthStates.Haversting
+
+	var days_passed = current_day - starting_day
+	if days_passed >= days_until_harvesting:
+		print("Memasuki fase Haversting!")
+		current_growth_state = DataTypes.GrowthStates.Haversting
 		crop_harvesting.emit()
+
 		
 func get_current_growth_state() -> DataTypes.GrowthStates:
 	return current_growth_state
