@@ -1,3 +1,4 @@
+# SaveLevelDataComponent.gd
 class_name SaveLevelDataComponent
 extends Node
 
@@ -12,9 +13,8 @@ func _ready() -> void:
 
 func save_node_data() -> void:
 	var nodes = get_tree().get_nodes_in_group("save_data_component")
-	
 	game_data_resource = SaveGameDataResource.new()
-	
+
 	if nodes != null:
 		for node: SaveDataComponent in nodes:
 			if node is SaveDataComponent:
@@ -25,29 +25,28 @@ func save_node_data() -> void:
 func save_game() -> void:
 	if !DirAccess.dir_exists_absolute(save_game_data_path):
 		DirAccess.make_dir_absolute(save_game_data_path)
-	
+
 	var level_save_file_name: String = save_file_name % level_scene_name
-	
 	save_node_data()
-	
 	var result: int = ResourceSaver.save(game_data_resource, save_game_data_path + level_save_file_name)
 	print("save result:", result)
 
 func load_game() -> void:
+	await get_tree().process_frame # Tunggu sampai scene sepenuhnya siap
+
 	var level_save_file_name: String = save_file_name % level_scene_name
 	var save_game_path: String = save_game_data_path + level_save_file_name
-	
+
 	if !FileAccess.file_exists(save_game_path):
+		print("Save file not found.")
 		return
-	
+
 	game_data_resource = ResourceLoader.load(save_game_path)
-	
 	if game_data_resource == null:
+		print("Failed to load resource.")
 		return
-	
+
 	var root_node: Window = get_tree().root
-	
 	for resource in game_data_resource.save_data_nodes:
-		if resource is Resource:
-			if resource is NodeDataResource:
-				resource._load_data(root_node)
+		if resource is NodeDataResource:
+			resource._load_data(root_node)
