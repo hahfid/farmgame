@@ -77,9 +77,6 @@ scale = Vector2(-1, 1)
 [node name="Chicken2" parent="." instance=ExtResource("7_mcf2q")]
 position = Vector2(255, 244)
 
-[node name="AnimatedSprite2D" parent="Chicken2" index="0"]
-animation = &"Idle"
-
 [node name="Chicken3" parent="." instance=ExtResource("7_mcf2q")]
 position = Vector2(312, 227)
 
