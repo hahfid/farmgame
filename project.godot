@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Farmtails"
-run/main_scene="res://Scenes/ui/game_menu_screen.tscn"
+run/main_scene="uid://cu62rmddxafn6"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -41,7 +41,7 @@ window/stretch/scale_mode="integer"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/splash_screen_wizard/plugin.cfg")
 
 [file_customization]
 

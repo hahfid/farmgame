@@ -1,0 +1,199 @@
+[gd_scene load_steps=7 format=3 uid="uid://dfhoyyuse818r"]
+
+[ext_resource type="Script" uid="uid://nt4s88n5lk8w" path="res://isi_credit.gd" id="1_bdy63"]
+[ext_resource type="AudioStream" uid="uid://2iuyuol53vyl" path="res://Assets/game/characters/linga guli guli.mp3" id="2_5ec2d"]
+[ext_resource type="FontFile" uid="uid://dggrn12oms7fh" path="res://Assets/ui/fonts/zx_palm.ttf" id="2_mxfrr"]
+[ext_resource type="Texture2D" uid="uid://dx5yr5yi2gvsd" path="res://Assets/logo/download__4_-removebg-preview.png" id="3_a72su"]
+[ext_resource type="Texture2D" uid="uid://6dr8ayfpsliw" path="res://Assets/logo/WhatsApp Image 2025-07-07 at 18.11.25.jpeg" id="3_mxfrr"]
+[ext_resource type="Texture2D" uid="uid://c1wfih4k255yh" path="res://Assets/logo/24 Juni 2025.jpg" id="4_a72su"]
+
+[node name="IsiCredit" type="Node2D"]
+script = ExtResource("1_bdy63")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Control"]
+stream = ExtResource("2_5ec2d")
+volume_db = 6.957
+autoplay = true
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_right = 638.0
+offset_bottom = 1099.0
+color = Color(0.162066, 0.162066, 0.162066, 0.996078)
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 139.0
+offset_top = 142.0
+offset_right = 421.0
+offset_bottom = 614.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.964706, 0.933333, 0.121569, 0.243137)
+theme_override_colors/font_shadow_color = Color(0.6, 0.662745, 0.301961, 0.945098)
+theme_override_colors/font_outline_color = Color(0.633681, 0.478195, 0.436453, 1)
+theme_override_font_sizes/font_size = 15
+text = "Coding and Implementation  
+
+Technical Design and Planning
+
+Debugging and Optimization
+
+Technical Documentation
+
+Artist and Animator
+
+
+
+"
+
+[node name="Label" type="Label" parent="Control/Label"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 25.0
+offset_right = 218.0
+offset_bottom = 50.0
+text = "Muhammad Hafid"
+
+[node name="Label2" type="Label" parent="Control/Label"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 69.0
+offset_right = 222.0
+offset_bottom = 94.0
+text = "M.Aldi Hawari"
+
+[node name="Label3" type="Label" parent="Control/Label"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 215.0
+offset_right = 222.0
+offset_bottom = 240.0
+text = "Muhammad Iham Hakiki"
+
+[node name="Label4" type="Label" parent="Control/Label"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 166.0
+offset_right = 225.0
+offset_bottom = 191.0
+text = "Farhan Kumara A."
+
+[node name="Label5" type="Label" parent="Control/Label"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 117.0
+offset_right = 222.0
+offset_bottom = 142.0
+text = "Ciko Nanda P.W."
+
+[node name="Label3" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 116.0
+offset_top = 52.0
+offset_right = 473.0
+offset_bottom = 70.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_mxfrr")
+theme_override_font_sizes/font_size = 17
+text = "NAMA KELOMPOK : DJONG"
+
+[node name="Label5" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 11.0
+offset_top = 761.0
+offset_right = 368.0
+offset_bottom = 779.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_mxfrr")
+theme_override_font_sizes/font_size = 17
+text = "SOURCE :"
+
+[node name="Label4" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 7.0
+offset_top = 430.0
+offset_right = 364.0
+offset_bottom = 448.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_mxfrr")
+theme_override_font_sizes/font_size = 17
+text = "DOCUMENTATION :"
+
+[node name="TextureRect3" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = 489.0
+offset_top = 300.0
+offset_right = 742.0
+offset_bottom = 464.0
+scale = Vector2(0.572527, 0.329401)
+texture = ExtResource("3_a72su")
+expand_mode = 1
+
+[node name="BackButton" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 488.0
+offset_top = 272.0
+offset_right = 603.0
+offset_bottom = 303.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "BACK
+"
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 459.0
+offset_right = 1915.0
+offset_bottom = 1720.0
+scale = Vector2(0.121272, 0.103875)
+texture = ExtResource("3_mxfrr")
+
+[node name="TextureRect2" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 607.0
+offset_right = 4795.0
+offset_bottom = 3199.0
+scale = Vector2(0.0467079, 0.0482276)
+texture = ExtResource("4_a72su")
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 794.0
+offset_right = 636.0
+offset_bottom = 931.0
+theme_override_font_sizes/font_size = 12
+text = " https://pixelfrog-assets.itch.io/tiny-swords
+
+https://www.amazon.com/Level-Guide-Great-Video-Design/dp/1118877160
+
+https://github.com/ThePat02/SplashScreenWizard
+
+https://www.youtube.com/@rapidvectors"
+
+[connection signal="pressed" from="Control/BackButton" to="." method="_on_back_button_pressed"]

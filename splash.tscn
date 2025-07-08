@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvjwm6ln2yqt8"]
+
+[ext_resource type="Script" uid="uid://du2rhpabij2jy" path="res://addons/awesome_splash/core/AweSplashScreen.gd" id="1_b04ml"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AweSplashScreen" type="Node2D" parent="."]
+script = ExtResource("1_b04ml")
+metadata/_custom_type_script = "uid://du2rhpabij2jy"

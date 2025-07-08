@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://c7h3uks6vdirx"]
+[gd_scene load_steps=7 format=3 uid="uid://c7h3uks6vdirx"]
 
 [ext_resource type="Script" uid="uid://b08brbciq06no" path="res://Scenes/ui/game_menu_screen.gd" id="1_flhs4"]
 [ext_resource type="Theme" uid="uid://crvtv2tqtcxqd" path="res://Scenes/ui/game_ui_theme.tres" id="1_pwgn6"]
 [ext_resource type="PackedScene" uid="uid://yly57xcg7aes" path="res://Scenes/ui/game_menu_screen_backgroung.tscn" id="1_uauyc"]
 [ext_resource type="PackedScene" uid="uid://dn7ey0sdg4rnl" path="res://Scenes/components/mouse_cursor_component.tscn" id="2_u314g"]
 [ext_resource type="Texture2D" uid="uid://4vpgl3x1dt62" path="res://Assets/ui/mouse_icon.png" id="3_h3bit"]
+[ext_resource type="Texture2D" uid="uid://3t7pmtyhmrd0" path="res://Assets/game/objects/Screenshot_2025-07-07_120812-removebg-preview.png" id="6_x3ffv"]
 
 [node name="GameMenuScreen" type="CanvasLayer"]
 script = ExtResource("1_flhs4")
@@ -19,6 +20,10 @@ cursor_component_texture = ExtResource("3_h3bit")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 24.0
+offset_right = 5.0
+offset_bottom = 24.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_pwgn6")
@@ -37,7 +42,7 @@ theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_font_sizes/font_size = 54
-text = "FARMTAILS"
+text = "KEHIDUPUNK"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
@@ -65,6 +70,17 @@ custom_minimum_size = Vector2(100, 29)
 layout_mode = 2
 theme_type_variation = &"GameMenuButton"
 text = "QUIT"
+
+[node name="CreditButton" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 29)
+layout_mode = 2
+theme_type_variation = &"GameMenuButton"
+text = "CREDIT"
+
+[node name="Screenshot2025-07-07120812-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(105, 82)
+scale = Vector2(0.642986, 0.7408)
+texture = ExtResource("6_x3ffv")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/StartGameButton" to="." method="_on_start_game_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/SaveGameButton" to="." method="_on_save_game_button_pressed"]

@@ -1,0 +1,159 @@
+[gd_scene load_steps=18 format=3 uid="uid://cu62rmddxafn6"]
+
+[ext_resource type="Script" uid="uid://drsm3owkfovsc" path="res://splash_screen.gd" id="1_hlpdx"]
+[ext_resource type="Script" uid="uid://by6l6vk6oi75g" path="res://addons/splash_screen_wizard/splash_screen_slide.gd" id="2_arguk"]
+[ext_resource type="Texture2D" uid="uid://bep26dns4tcbl" path="res://Assets/logo/unpgrikediri_cover.jpg" id="3_arguk"]
+[ext_resource type="Script" uid="uid://dsukmgxyno4p5" path="res://addons/splash_screen_wizard/slide_transition.gd" id="3_spqux"]
+[ext_resource type="Script" uid="uid://yrw6cwswb0s7" path="res://addons/splash_screen_wizard/transitions/slide_transition_fade.gd" id="4_nodus"]
+[ext_resource type="Texture2D" uid="uid://chh3tb6vglnfr" path="res://Assets/game/objects/Fakultas Teknik dan Ilmu Komputer.png" id="6_spqux"]
+[ext_resource type="Texture2D" uid="uid://cchseron1pnfl" path="res://Assets/game/objects/PRODI.png" id="7_oc6rp"]
+[ext_resource type="Texture2D" uid="uid://mjyjwnfsbusa" path="res://Assets/game/objects/KELOMPOK 2.png" id="8_hlpdx"]
+[ext_resource type="Texture2D" uid="uid://dmyoih04bbjmj" path="res://Assets/game/objects/KEHIDUPUNK.png" id="9_hlpdx"]
+
+[sub_resource type="Resource" id="Resource_oc6rp"]
+script = ExtResource("3_spqux")
+metadata/_custom_type_script = "uid://dsukmgxyno4p5"
+
+[sub_resource type="Resource" id="Resource_hlpdx"]
+script = ExtResource("4_nodus")
+fade_type = 0
+duration = 0.5
+transition_type = 0
+metadata/_custom_type_script = "uid://yrw6cwswb0s7"
+
+[sub_resource type="Resource" id="Resource_spqux"]
+script = ExtResource("3_spqux")
+metadata/_custom_type_script = "uid://dsukmgxyno4p5"
+
+[sub_resource type="Resource" id="Resource_nodus"]
+script = ExtResource("4_nodus")
+fade_type = 0
+duration = 0.5
+transition_type = 0
+metadata/_custom_type_script = "uid://yrw6cwswb0s7"
+
+[sub_resource type="Resource" id="Resource_b1scc"]
+script = ExtResource("3_spqux")
+metadata/_custom_type_script = "uid://dsukmgxyno4p5"
+
+[sub_resource type="Resource" id="Resource_0d2yk"]
+script = ExtResource("4_nodus")
+fade_type = 0
+duration = 0.5
+transition_type = 0
+metadata/_custom_type_script = "uid://yrw6cwswb0s7"
+
+[sub_resource type="Resource" id="Resource_e186f"]
+script = ExtResource("3_spqux")
+metadata/_custom_type_script = "uid://dsukmgxyno4p5"
+
+[sub_resource type="Resource" id="Resource_akxoc"]
+script = ExtResource("4_nodus")
+fade_type = 0
+duration = 0.5
+transition_type = 0
+metadata/_custom_type_script = "uid://yrw6cwswb0s7"
+
+[node name="SplashScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_hlpdx")
+metadata/_custom_type_script = "uid://bddr3qdufm7yi"
+
+[node name="SplashScreenSlide" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_arguk")
+transition_in = SubResource("Resource_oc6rp")
+transition_out = SubResource("Resource_hlpdx")
+duration = 3.0
+metadata/_custom_type_script = "uid://by6l6vk6oi75g"
+
+[node name="TextureRect" type="TextureRect" parent="SplashScreenSlide"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = 2.0
+offset_right = 702.0
+offset_bottom = 358.0
+texture = ExtResource("3_arguk")
+expand_mode = 1
+
+[node name="SplashScreenSlide2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_arguk")
+transition_in = SubResource("Resource_spqux")
+transition_out = SubResource("Resource_nodus")
+duration = 3.0
+metadata/_custom_type_script = "uid://by6l6vk6oi75g"
+
+[node name="TextureRect" type="TextureRect" parent="SplashScreenSlide2"]
+layout_mode = 0
+offset_left = -522.0
+offset_top = -339.0
+offset_right = 1144.0
+offset_bottom = 603.0
+texture = ExtResource("6_spqux")
+expand_mode = 1
+
+[node name="SplashScreenSlide3" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_arguk")
+transition_in = SubResource("Resource_b1scc")
+transition_out = SubResource("Resource_0d2yk")
+duration = 3.0
+metadata/_custom_type_script = "uid://by6l6vk6oi75g"
+
+[node name="TextureRect" type="TextureRect" parent="SplashScreenSlide3"]
+layout_mode = 0
+offset_left = -632.0
+offset_top = -384.0
+offset_right = 1198.0
+offset_bottom = 678.0
+texture = ExtResource("7_oc6rp")
+expand_mode = 1
+
+[node name="SplashScreenSlide4" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_arguk")
+transition_in = SubResource("Resource_e186f")
+transition_out = SubResource("Resource_akxoc")
+duration = 2.0
+metadata/_custom_type_script = "uid://by6l6vk6oi75g"
+
+[node name="TextureRect" type="TextureRect" parent="SplashScreenSlide4"]
+layout_mode = 0
+offset_left = -677.0
+offset_top = -383.0
+offset_right = 1243.0
+offset_bottom = 697.0
+texture = ExtResource("8_hlpdx")
+
+[node name="FinalImage" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -30.0
+offset_top = -30.0
+offset_right = 860.0
+offset_bottom = 384.0
+texture = ExtResource("9_hlpdx")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="PressAnyKeyLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="finished" from="." to="." method="_on_finished"]
