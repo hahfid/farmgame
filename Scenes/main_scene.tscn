@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://demxl4464wsmw"]
+[gd_scene load_steps=9 format=3 uid="uid://demxl4464wsmw"]
 
 [ext_resource type="PackedScene" uid="uid://bcu501hxmcom3" path="res://Scenes/components/day_night_cycle_component.tscn" id="1_on8gl"]
 [ext_resource type="PackedScene" uid="uid://cinbx8do4tedt" path="res://Scenes/levels/level_1.tscn" id="2_lujht"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dn7ey0sdg4rnl" path="res://Scenes/components/mouse_cursor_component.tscn" id="5_oxiaa"]
 [ext_resource type="Texture2D" uid="uid://4vpgl3x1dt62" path="res://Assets/ui/mouse_icon.png" id="6_6ceyc"]
 [ext_resource type="AudioStream" uid="uid://cp3ipbl1onnp1" path="res://Assets/game/characters/purrfect day _3.ogg" id="7_maf8m"]
+[ext_resource type="Texture2D" uid="uid://dnkopl7gqcy8a" path="res://Assets/game/objects/Desain_tanpa_judul-removebg-preview.png" id="8_huasi"]
 
 [node name="MainScene" type="Node"]
 
@@ -36,3 +37,15 @@ volume_db = -3.236
 pitch_scale = 0.66
 autoplay = true
 parameters/looping = true
+
+[node name="DesainTanpaJudul-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(220, -25)
+texture = ExtResource("8_huasi")
+
+[node name="DesainTanpaJudul-removebg-preview2" type="Sprite2D" parent="."]
+position = Vector2(260, -25)
+texture = ExtResource("8_huasi")
+
+[node name="DesainTanpaJudul-removebg-preview3" type="Sprite2D" parent="."]
+position = Vector2(241, -64)
+texture = ExtResource("8_huasi")

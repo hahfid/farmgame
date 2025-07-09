@@ -195,5 +195,3 @@ https://www.amazon.com/Level-Guide-Great-Video-Design/dp/1118877160
 https://github.com/ThePat02/SplashScreenWizard
 
 https://www.youtube.com/@rapidvectors"
-
-[connection signal="pressed" from="Control/BackButton" to="." method="_on_back_button_pressed"]

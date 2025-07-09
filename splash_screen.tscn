@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://mjyjwnfsbusa" path="res://Assets/game/objects/KELOMPOK 2.png" id="8_hlpdx"]
 [ext_resource type="Texture2D" uid="uid://dmyoih04bbjmj" path="res://Assets/game/objects/KEHIDUPUNK.png" id="9_hlpdx"]
 
-[sub_resource type="Resource" id="Resource_oc6rp"]
+[sub_resource type="Resource" id="Resource_st23t"]
 script = ExtResource("3_spqux")
 metadata/_custom_type_script = "uid://dsukmgxyno4p5"
 
@@ -68,7 +68,7 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("2_arguk")
-transition_in = SubResource("Resource_oc6rp")
+transition_in = SubResource("Resource_st23t")
 transition_out = SubResource("Resource_hlpdx")
 duration = 3.0
 metadata/_custom_type_script = "uid://by6l6vk6oi75g"

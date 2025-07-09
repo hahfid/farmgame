@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cp3ipbl1onnp1"
+path="res://.godot/imported/purrfect day _3.ogg-7e742808a7317ce4d403a1c26c02c55b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/game/characters/purrfect day _3.ogg"
+dest_files=["res://.godot/imported/purrfect day _3.ogg-7e742808a7317ce4d403a1c26c02c55b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
